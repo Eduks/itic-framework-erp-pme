@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><module rename-to="dyadinfrastructure">
+      <!-- Inherit the core Web Toolkit stuff.                        -->
+      <inherits name="br.com.dyad.DyadInfrastructure"/>
+      <inherits name="com.google.gwt.user.User"/>	
+      <inherits name="com.extjs.gxt.desktop.WebDesktop"/>
+      <inherits name="com.extjs.gxt.themes.Themes"/>
+	  <inherits name="com.extjs.gxt.ui.GXT"/>
+
+      <!-- Specify the app entry point class.                         -->
+      <!-- <entry-point class="br.com.dyad.client.DyadInfrastructure"/> -->
+    
+      <!-- Specify the application specific style sheet.              -->
+      <!--<stylesheet src="DyadInfrastructure.css"/>-->
+      
+	  <servlet class="br.com.dyad.infrastructure.service.GenericServiceImpl" path="/genericservice"/>
+	  <servlet class="br.com.dyad.infrastructure.file.upload.UploadServlet" path="/uploadHandler" />
+	  <servlet class="br.com.dyad.infrastructure.service.servlets.NavigationServlet" path="/NavigationServlet" />
+</module>

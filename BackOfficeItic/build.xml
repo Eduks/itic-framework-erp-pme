@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<project name="DyadInfrastructure2" default="archive" basedir=".">
+	<property file="${basedir}/../DyadInfrastructure2/src/build.properties" />
+			
+	<!-- CLASSPATH da infra -->
+	<path id="project.classpath">
+		<fileset dir="${basedir}/war/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${basedir}/../DyadInfrastructure2/war/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${basedir}/../BusinessInfrastructure/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${basedir}/../dyadcommons/trunk/src/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${ant.home}/../org.aspectj.runtime_${aspectj.version}/">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="ajde.classpath">
+    	<pathelement path="${ant.home}/../org.aspectj.ajde_${aspectj.version}/ajde.jar"/>
+    	<pathelement path="${ant.home}/../org.aspectj.weaver_${aspectj.version}/aspectjweaver.jar"/>
+    	<pathelement path="${ant.home}/../org.aspectj.runtime_${aspectj.version}/aspectjrt.jar"/>
+  	    <fileset dir="${ant.home}/../">
+  			<include name="*.jar" />
+  	 	</fileset>
+    </path>
+	
+    <taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties">
+    	<classpath refid="ajde.classpath" />
+    </taskdef>
+
+	<!-- apaga todos os diretórios de build e gera novamente -->
+	<target name="clean">
+		<delete dir="${basedir}/war/WEB-INF/classes" />
+		<delete dir="${basedir}/dist" />
+		<echo>Criando diretorio para compilacao</echo>
+		<mkdir dir="${basedir}/war/WEB-INF/classes" />
+		<echo>Criando diretorio para distribuicao</echo>
+		<mkdir dir="${basedir}/dist" />
+	</target>
+
+	<!-- Compila o projeto -->
+	<target name="compile" depends="clean">
+		<echo>Compilando o projeto BackOffice</echo>
+		<property name="ajcArgFile" value=""/>
+		<iajc source="1.6" target="1.6" failonerror="true" destdir="${basedir}/war/WEB-INF/classes" verbose="false">
+			<sourceroots>
+				<pathelement location="${basedir}/src"/>
+				<pathelement location="${basedir}/../BusinessInfrastructure/src"/>
+				<pathelement location="${basedir}/../dyadcommons/trunk/src"/>
+				<pathelement location="${basedir}/../DyadInfrastructure2/src"/>
+			</sourceroots>
+			<classpath refid="project.classpath" /> 			
+		</iajc>
+		<echo>Compilacao do BackOffice concluida com sucesso</echo>
+	</target>
+
+	<!-- Gera o war do projeto para ser publicado no tomcat -->
+	<target name="archive" depends="compile">
+		<echo>Gerando o arquivo WAR</echo>
+		<war basedir="${basedir}/war" destfile="${basedir}/dist/backoffice.war" />
+		<echo>WAR exportado com sucesso</echo>
+	</target>
+		
+</project>
