@@ -1,0 +1,749 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.6 built on Wednesday Sep 30, 2009 at 18:55:14 GMT
+---- Dump Properties ---
+Dump file: ajcore.20100121.111921.343.txt
+Dump reason: java.lang.OutOfMemoryError
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+java.lang.OutOfMemoryError: Java heap space
+	at java.nio.HeapByteBuffer.<init>(Unknown Source)
+	at java.nio.ByteBuffer.allocate(Unknown Source)
+	at sun.nio.cs.StreamEncoder.<init>(Unknown Source)
+	at sun.nio.cs.StreamEncoder.<init>(Unknown Source)
+	at sun.nio.cs.StreamEncoder.forOutputStreamWriter(Unknown Source)
+	at java.io.OutputStreamWriter.<init>(Unknown Source)
+	at java.io.PrintStream.<init>(Unknown Source)
+	at java.io.PrintStream.<init>(Unknown Source)
+	at org.aspectj.weaver.bcel.LazyClassGen.toLongString(LazyClassGen.java:764)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1837)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1755)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1515)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1322)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.weaveQueuedEntries(AjPipeliningCompilerAdapter.java:435)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.queueForWeaving(AjPipeliningCompilerAdapter.java:371)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.afterProcessing(AjPipeliningCompilerAdapter.java:358)
+	at org.aspectj.ajdt.internal.compiler.CompilerAdapter.ajc$after$org_aspectj_ajdt_internal_compiler_CompilerAdapter$5$6b855184(CompilerAdapter.aj:98)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:652)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:392)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1007)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:268)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:182)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:355)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:234)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.executeInSameVM(AjcTask.java:1228)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.execute(AjcTask.java:1038)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Arquivos de programas\Java\jre6\bin
+java.vm.version=14.2-b01
+ant.library.dir=C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+sun.java.launcher=SUN_STANDARD
+user.country=BR
+sun.os.patch.level=Service Pack 3
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\eclipse\workspace\BackOffice\src
+java.runtime.version=1.6.0_16-b01
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Arquivos de programas\Java\jre6\lib\endorsed
+os.arch=x86
+java.io.tmpdir=C:\DOCUME~1\Dyad\CONFIG~1\Temp\
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+user.variant=
+os.name=Windows XP
+ant.home=C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145
+sun.jnu.encoding=Cp1252
+java.library.path=C:\eclipse;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Arquivos de programas/Java/jre6/bin/client;C:/Arquivos de programas/Java/jre6/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Arquivos de programas\TortoiseSVN\bin;C:\eclipse\configuration\org.eclipse.osgi\bundles\534\1\.cp
+java.specification.name=Java Platform API Specification
+java.class.version=50.0
+sun.management.compiler=HotSpot Client Compiler
+os.version=5.1
+user.home=C:\Documents and Settings\Dyad
+user.timezone=GMT-03:00
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.6
+java.class.path=C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-antlr.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-bcel.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-bsf.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-log4j.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-oro.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-regexp.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-apache-resolver.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-commons-logging.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-commons-net.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-jai.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-javamail.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-jdepend.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-jmf.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-jsch.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-junit.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-launcher.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-netrexx.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-nodeps.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-starteam.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-stylebook.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-swing.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-trax.jar;C:\eclipse\plugins\org.apache.ant_1.7.1.v20090120-1145\lib\ant-weblogic.jar;C:\eclipse\configuration\org.eclipse.osgi\bundles\47\1\.cp\lib\remoteAnt.jar;C:\eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.5.1.v3555a.jar
+user.name=Dyad
+java.vm.specification.version=1.0
+java.home=C:\Arquivos de programas\Java\jre6
+sun.arch.data.model=32
+user.language=pt
+java.specification.vendor=Sun Microsystems Inc.
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode, sharing
+java.version=1.6.0_16
+java.ext.dirs=C:\Arquivos de programas\Java\jre6\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+sun.boot.class.path=C:\Arquivos de programas\Java\jre6\lib\resources.jar;C:\Arquivos de programas\Java\jre6\lib\rt.jar;C:\Arquivos de programas\Java\jre6\lib\sunrsasign.jar;C:\Arquivos de programas\Java\jre6\lib\jsse.jar;C:\Arquivos de programas\Java\jre6\lib\jce.jar;C:\Arquivos de programas\Java\jre6\lib\charsets.jar;C:\Arquivos de programas\Java\jre6\classes
+java.vendor=Sun Microsystems Inc.
+file.separator=\
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86
+---- Command Line ---
+-source
+1.6
+-target
+1.6
+-d
+C:\eclipse\workspace\BackOffice\war\WEB-INF\classes
+-classpath
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\JoSQL-2.1.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\antlr-2.7.6.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\aspectjrt.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-beanutils-1.8.0.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-collections-3.1.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-io-1.4.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-lang-2.4.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-logging-1.1.1.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\dom4j-1.6.1.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\ehcache-1.2.3.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\ejb3-persistence.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gentlyWEB-utils-1.1.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-api-checker.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-dev-patch.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-dev-windows.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-dev.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-servlet.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-soyc-vis.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-user.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gxt.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-annotations.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-cglib-repack-2.1_3.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-commons-annotations.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-entitymanager.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-testing.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-tools.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate3.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\iText-2.1.7.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\jasperreports-3.6.0.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\javassist-3.4.GA.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\javassist.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\jta-1.1.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\log4j-1.2.15.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\mail.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\postgresql-8.3-604.jdbc4.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\slf4j-api-1.5.6.jar;C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\slf4j-log4j12-1.5.6.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\JoSQL-2.1.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\antlr-2.7.6.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\aspectjrt.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\c3p0-0.9.1.2.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-beanutils-1.8.0.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-codec-1.3.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-collections-3.1.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-fileupload-1.2.1.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-io-1.4.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-lang-2.4.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-logging-1.1.1.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-net-2.0.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\dom4j-1.6.1.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\ehcache-1.2.3.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\ejb3-persistence.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gentlyWEB-utils-1.1.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-api-checker.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-dev.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-servlet.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-soyc-vis.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-user.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gxt.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-annotations.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-cglib-repack-2.1_3.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-commons-annotations.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-entitymanager.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-testing.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-tools.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate3.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\iText-2.1.7.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\jakarta-oro-2.0.8.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\jasperreports-3.6.0.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\javassist-3.4.GA.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\javassist.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\jta-1.1.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\log4j-1.2.15.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\mail.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\postgresql-8.4-701.jdbc4.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\quartz-all-1.6.5.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\slf4j-api-1.5.6.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\slf4j-log4j12-1.5.6.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\tools.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\xpp3_min-1.1.4c.jar;C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\xstream-1.3.1.jar;C:\eclipse\workspace\BusinessInfrastructure\lib\aspectjrt.jar;C:\eclipse\workspace\BusinessInfrastructure\lib\ejb3-persistence.jar;C:\eclipse\workspace\BusinessInfrastructure\lib\hibernate3.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\JoSQL-2.1.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-beanutils-1.8.0.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-collections-3.1.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-io-1.4.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-lang-2.4.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-logging-1.1.1.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\mail.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\slf4j-api-1.5.6.jar;C:\eclipse\workspace\dyadcommons\trunk\src\lib\slf4j-log4j12-1.5.6.jar;C:\eclipse\plugins\org.aspectj.runtime_1.6.6.20090930185500\aspectjrt.jar
+-sourceroots
+C:\eclipse\workspace\BackOffice\src;C:\eclipse\workspace\BusinessInfrastructure\src;C:\eclipse\workspace\dyadcommons\trunk\src;C:\eclipse\workspace\DyadInfrastructure2\src
+---- Full Classpath ---
+C:\Arquivos de programas\Java\jre6\lib\resources.jar(1115985 bytes)
+C:\Arquivos de programas\Java\jre6\lib\rt.jar(44283982 bytes)
+C:\Arquivos de programas\Java\jre6\lib\sunrsasign.jar(missing)
+C:\Arquivos de programas\Java\jre6\lib\jsse.jar(558189 bytes)
+C:\Arquivos de programas\Java\jre6\lib\jce.jar(88256 bytes)
+C:\Arquivos de programas\Java\jre6\lib\charsets.jar(6685813 bytes)
+C:\Arquivos de programas\Java\jre6\classes(missing)
+C:\Arquivos de programas\Java\jre6\lib\ext\dnsns.jar(8239 bytes)
+C:\Arquivos de programas\Java\jre6\lib\ext\localedata.jar(831930 bytes)
+C:\Arquivos de programas\Java\jre6\lib\ext\sunjce_provider.jar(170239 bytes)
+C:\Arquivos de programas\Java\jre6\lib\ext\sunmscapi.jar(31893 bytes)
+C:\Arquivos de programas\Java\jre6\lib\ext\sunpkcs11.jar(231542 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\JoSQL-2.1.jar(192593 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\antlr-2.7.6.jar(443432 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\aspectjrt.jar(117501 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-beanutils-1.8.0.jar(231320 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-collections-3.1.jar(559366 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-io-1.4.jar(109043 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-lang-2.4.jar(261809 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\commons-logging-1.1.1.jar(60841 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\dom4j-1.6.1.jar(313898 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\ehcache-1.2.3.jar(204667 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\ejb3-persistence.jar(50583 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gentlyWEB-utils-1.1.jar(69223 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-api-checker.jar(65066 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-dev-patch.jar(30867 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-dev-windows.jar(11221645 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-dev.jar(18889986 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-servlet.jar(1559853 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-soyc-vis.jar(9364 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gwt-user.jar(5000657 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\gxt.jar(2305555 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-annotations.jar(279714 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-cglib-repack-2.1_3.jar(386027 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-commons-annotations.jar(65846 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-entitymanager.jar(119292 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-testing.jar(31493 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate-tools.jar(345962 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\hibernate3.jar(2766130 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\iText-2.1.7.jar(1130070 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\jasperreports-3.6.0.jar(2531175 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\javassist-3.4.GA.jar(471005 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\javassist.jar(463915 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\jta-1.1.jar(13236 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\log4j-1.2.15.jar(391834 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\mail.jar(434812 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\postgresql-8.3-604.jdbc4.jar(475580 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\slf4j-api-1.5.6.jar(22338 bytes)
+C:\eclipse\workspace\BackOffice\war\WEB-INF\lib\slf4j-log4j12-1.5.6.jar(9678 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\JoSQL-2.1.jar(192593 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\antlr-2.7.6.jar(443432 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\aspectjrt.jar(117501 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\c3p0-0.9.1.2.jar(610790 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-beanutils-1.8.0.jar(231320 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-codec-1.3.jar(46725 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-collections-3.1.jar(559366 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-fileupload-1.2.1.jar(57779 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-io-1.4.jar(109043 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-lang-2.4.jar(261809 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-logging-1.1.1.jar(60841 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\commons-net-2.0.jar(197316 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\dom4j-1.6.1.jar(313898 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\ehcache-1.2.3.jar(204667 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\ejb3-persistence.jar(50583 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gentlyWEB-utils-1.1.jar(69223 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-api-checker.jar(65066 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-dev.jar(18889986 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-servlet.jar(1559853 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-soyc-vis.jar(9364 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gwt-user.jar(5000657 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\gxt.jar(2305555 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-annotations.jar(279714 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-cglib-repack-2.1_3.jar(386027 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-commons-annotations.jar(65846 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-entitymanager.jar(119292 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-testing.jar(31493 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate-tools.jar(345962 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\hibernate3.jar(2766130 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\iText-2.1.7.jar(1130070 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\jakarta-oro-2.0.8.jar(65261 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\jasperreports-3.6.0.jar(2531175 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\javassist-3.4.GA.jar(471005 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\javassist.jar(463915 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\jta-1.1.jar(13236 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\log4j-1.2.15.jar(391834 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\mail.jar(434812 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\postgresql-8.4-701.jdbc4.jar(510170 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\quartz-all-1.6.5.jar(462272 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\slf4j-api-1.5.6.jar(22338 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\slf4j-log4j12-1.5.6.jar(9678 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\tools.jar(12495351 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\xpp3_min-1.1.4c.jar(24956 bytes)
+C:\eclipse\workspace\DyadInfrastructure2\war\WEB-INF\lib\xstream-1.3.1.jar(431406 bytes)
+C:\eclipse\workspace\BusinessInfrastructure\lib\aspectjrt.jar(117501 bytes)
+C:\eclipse\workspace\BusinessInfrastructure\lib\ejb3-persistence.jar(50583 bytes)
+C:\eclipse\workspace\BusinessInfrastructure\lib\hibernate3.jar(2766130 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\JoSQL-2.1.jar(192593 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-beanutils-1.8.0.jar(231320 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-collections-3.1.jar(559366 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-io-1.4.jar(109043 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-lang-2.4.jar(261809 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\commons-logging-1.1.1.jar(60841 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\mail.jar(434812 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\slf4j-api-1.5.6.jar(22338 bytes)
+C:\eclipse\workspace\dyadcommons\trunk\src\lib\slf4j-log4j12-1.5.6.jar(9678 bytes)
+C:\eclipse\plugins\org.aspectj.runtime_1.6.6.20090930185500\aspectjrt.jar(117501 bytes)
+---- Compiler Messages ---
+info directory classpath entry does not exist: C:\Arquivos de programas\Java\jre6\lib\sunrsasign.jar
+info zipfile classpath entry does not exist: C:\Arquivos de programas\Java\jre6\classes
+info Pipelining compilation
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\ControlDefineInteractionAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\DataListListenerAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\DisableActionAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\ExecuteWidgetListenerAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\FactoryAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\HibernateSessionAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogExceptionAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\OnCalcFieldAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\OverrideAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SendToClientAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SetFieldEvents.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SetOldValueAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SysReferenceAspect.aj
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\UserInfoAspect.aj
+info weaver operating in reweavable mode.  Need to verify any required types exist.
+info woven aspect br.com.dyad.infrastructure.aspect.ControlDefineInteractionAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\ControlDefineInteractionAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.DataListListenerAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\DataListListenerAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.DisableActionAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\DisableActionAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.DisableActionAspect$AjcClosure1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\DisableActionAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.ExecuteWidgetListenerAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\ExecuteWidgetListenerAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.FactoryAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\FactoryAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.HibernateSessionAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\HibernateSessionAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.HibernateSessionAspect$AjcClosure1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\HibernateSessionAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogExceptionAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogExceptionAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure5 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure7 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure9 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure11 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure15 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure17 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure19 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure21 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure23 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure25 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.LogHibernateAspect$AjcClosure27 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\LogHibernateAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.OnCalcFieldAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\OnCalcFieldAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.OverrideAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\OverrideAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.SendToClientAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SendToClientAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.SetFieldEvents (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SetFieldEvents.aj)
+warning at C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SetFieldEvents.aj:42::1113 does not match because declaring type is br.com.dyad.infrastructure.entity.AbstractEntity, if match desired use target(br.com.dyad.infrastructure.entity.BaseEntity+) [Xlint:unmatchedSuperTypeInCall]
+	see also: C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SetOldValueAspect.aj:82::2879
+warning at C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SetFieldEvents.aj:42::1113 does not match because declaring type is br.com.dyad.infrastructure.entity.AbstractEntity, if match desired use target(br.com.dyad.infrastructure.entity.BaseEntity+) [Xlint:unmatchedSuperTypeInCall]
+	see also: C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SetOldValueAspect.aj:101::3604
+info woven aspect br.com.dyad.infrastructure.aspect.SetOldValueAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SetOldValueAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.SysReferenceAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\SysReferenceAspect.aj)
+info woven aspect br.com.dyad.infrastructure.aspect.UserInfoAspect (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\infrastructure\aspect\UserInfoAspect.aj)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\annotations\Cabecalho.java
+info woven class br.com.dyad.backoffice.annotations.Cabecalho (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\annotations\Cabecalho.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\annotations\TipoCampoCabecalho.java
+info woven class br.com.dyad.backoffice.annotations.TipoCampoCabecalho (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\annotations\TipoCampoCabecalho.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\annotations\TipoParametroConsulta.java
+info woven class br.com.dyad.backoffice.annotations.TipoParametroConsulta (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\annotations\TipoParametroConsulta.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\consulta\teste\ConsultaOperacaoTeste.java
+info woven class br.com.dyad.backoffice.consulta.teste.ConsultaOperacaoTeste (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\consulta\teste\ConsultaOperacaoTeste.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\auxiliares\PedidoAux.java
+info woven class br.com.dyad.backoffice.entidade.auxiliares.PedidoAux (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\auxiliares\PedidoAux.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoBaixaPedido.java
+info woven class br.com.dyad.backoffice.entidade.evento.EventoCabecalhoBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoBaixaPedidoDesconto.java
+info woven class br.com.dyad.backoffice.entidade.evento.EventoCabecalhoBaixaPedidoDesconto (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoBaixaPedidoDesconto.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoBaixaPedidoFrete.java
+info woven class br.com.dyad.backoffice.entidade.evento.EventoCabecalhoBaixaPedidoFrete (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoBaixaPedidoFrete.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoPedido.java
+info woven class br.com.dyad.backoffice.entidade.evento.EventoCabecalhoPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoPedidoDesconto.java
+info woven class br.com.dyad.backoffice.entidade.evento.EventoCabecalhoPedidoDesconto (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoPedidoDesconto.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoPedidoFrete.java
+info woven class br.com.dyad.backoffice.entidade.evento.EventoCabecalhoPedidoFrete (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoCabecalhoPedidoFrete.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoOperacao.java
+info woven class br.com.dyad.backoffice.entidade.evento.EventoOperacao (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\evento\EventoOperacao.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\BaixaTitulo.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.BaixaTitulo (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\BaixaTitulo.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\cabecalho\CabecalhoBaixaPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.cabecalho.CabecalhoBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\cabecalho\CabecalhoBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\cabecalho\CabecalhoPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.cabecalho.CabecalhoPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\cabecalho\CabecalhoPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\cabecalho\CabecalhoTituloBaixaPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.cabecalho.CabecalhoTituloBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\cabecalho\CabecalhoTituloBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\EntidadeOperacao.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.EntidadeOperacao (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\EntidadeOperacao.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\Financeiro.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.Financeiro (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\Financeiro.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\Cabecalho.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.interfaces.Cabecalho (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\Cabecalho.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\CabecalhoBaixante.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.interfaces.CabecalhoBaixante (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\CabecalhoBaixante.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\CabecalhoBaixavel.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.interfaces.CabecalhoBaixavel (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\CabecalhoBaixavel.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\CabecalhoPedidoAbstrato.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.interfaces.CabecalhoPedidoAbstrato (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\CabecalhoPedidoAbstrato.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\EntidadeBaixavel.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.interfaces.EntidadeBaixavel (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\EntidadeBaixavel.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\EntidadeBaixavelAbstrata.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.interfaces.EntidadeBaixavelAbstrata (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\EntidadeBaixavelAbstrata.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\OperacaoBaixavel.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.interfaces.OperacaoBaixavel (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\interfaces\OperacaoBaixavel.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemBaixaPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.ItemBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemBaixaPedidoAbstrato.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.ItemBaixaPedidoAbstrato (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemBaixaPedidoAbstrato.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.ItemPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemPedidoAbstrato.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.ItemPedidoAbstrato (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemPedidoAbstrato.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemTitulo.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.ItemTitulo (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemTitulo.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemTituloAbstrato.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.ItemTituloAbstrato (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemTituloAbstrato.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemTituloBaixaPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.ItemTituloBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\ItemTituloBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\CabecalhoOperacaoAbstrato.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.CabecalhoOperacaoAbstrato (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\CabecalhoOperacaoAbstrato.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceAprovavel.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.InterfaceAprovavel (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceAprovavel.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceCabecalhoOperacao.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.InterfaceCabecalhoOperacao (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceCabecalhoOperacao.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceCancelavel.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.InterfaceCancelavel (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceCancelavel.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceItemOperacao.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.InterfaceItemOperacao (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceItemOperacao.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceRegra.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.InterfaceRegra (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\InterfaceRegra.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\ItemOperacaoAbstrato.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.ItemOperacaoAbstrato (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\ItemOperacaoAbstrato.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraAbstrata.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.RegraAbstrata (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraAbstrata.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraBaixaPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.RegraBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraOperacaoFactory.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.RegraOperacaoFactory (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraOperacaoFactory.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.RegraPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraTituloBaixaPedido.java
+info woven class br.com.dyad.backoffice.entidade.movimentacoes.objetos_interface_teste.RegraTituloBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\entidade\movimentacoes\objetos_interface_teste\RegraTituloBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\AlmoxarifadoWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.AlmoxarifadoWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\AlmoxarifadoWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\CarteiraCobrancaWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.CarteiraCobrancaWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\CarteiraCobrancaWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\DisponivelWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.DisponivelWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\DisponivelWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\EstabelecimentoWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.EstabelecimentoWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\EstabelecimentoWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\NumeradorWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.NumeradorWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\NumeradorWindow.java)
+info woven class br.com.dyad.backoffice.navigation.cadastro.NumeradorWindow$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\NumeradorWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\PaisWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.PaisWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\PaisWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\PessoaWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.PessoaWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\PessoaWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\RecursoWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.RecursoWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\RecursoWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\RegiaoEstadoWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.RegiaoEstadoWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\RegiaoEstadoWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\RegiaoGeograficaWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.RegiaoGeograficaWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\RegiaoGeograficaWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\RegiaoLocalidadeWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.RegiaoLocalidadeWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\RegiaoLocalidadeWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\TipoLogradouroWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.TipoLogradouroWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\TipoLogradouroWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\UfWindow.java
+info woven class br.com.dyad.backoffice.navigation.cadastro.UfWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\cadastro\UfWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$5 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$3 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$9 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$8 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$2 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridVariaveisBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$12 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$7 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$4 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$10 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$6 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$11 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.BaixaPedidoWindow$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\BaixaPedidoWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoBaixaPedido.java
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoBaixaPedido$2 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoBaixaPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoBaixaPedido$2$1$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoBaixaPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoBaixaPedido$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoBaixaPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoBaixaPedido$1$1$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoBaixaPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoBaixaPedido$2$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoBaixaPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoBaixaPedido$1$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoBaixaPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoPedido.java
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoPedido$1$1$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoPedido$1$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoPedido$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoPedido.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridEdicaoPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridEdicaoPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridExibePedidosPendentesLocalizados.java
+info woven class br.com.dyad.backoffice.navigation.operacao.GridExibePedidosPendentesLocalizados (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\GridExibePedidosPendentesLocalizados.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$3 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$8 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$4 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$5 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$1 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$2 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$6 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$10 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$9 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$7 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.GridVariaveis (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info woven class br.com.dyad.backoffice.navigation.operacao.PedidoWindow$11 (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\navigation\operacao\PedidoWindow.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ConsultaBaixaPedido.java
+info woven class br.com.dyad.backoffice.operacao.consulta.ConsultaBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ConsultaBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ConsultaOperacao.java
+info woven class br.com.dyad.backoffice.operacao.consulta.ConsultaOperacao (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ConsultaOperacao.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ConsultaPedido.java
+info woven class br.com.dyad.backoffice.operacao.consulta.ConsultaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ConsultaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ConsultaTitulo.java
+info woven class br.com.dyad.backoffice.operacao.consulta.ConsultaTitulo (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ConsultaTitulo.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ParametroDeConsulta.java
+info woven class br.com.dyad.backoffice.operacao.consulta.ParametroDeConsulta (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ParametroDeConsulta.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ParametroDeConsultaDeBeans.java
+info woven class br.com.dyad.backoffice.operacao.consulta.ParametroDeConsultaDeBeans (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ParametroDeConsultaDeBeans.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ParametroDeConsultaDeBeansDeOutrasTabelas.java
+info woven class br.com.dyad.backoffice.operacao.consulta.ParametroDeConsultaDeBeansDeOutrasTabelas (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\consulta\ParametroDeConsultaDeBeansDeOutrasTabelas.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\Operacao.java
+info woven class br.com.dyad.backoffice.operacao.Operacao (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\Operacao.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\OperacaoBaixa.java
+info woven class br.com.dyad.backoffice.operacao.OperacaoBaixa (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\OperacaoBaixa.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\OperacaoBaixaPedido.java
+info woven class br.com.dyad.backoffice.operacao.OperacaoBaixaPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\OperacaoBaixaPedido.java)
+info woven class br.com.dyad.backoffice.operacao.OperacaoCriaTitulo (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\OperacaoBaixaPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\OperacaoPedido.java
+info woven class br.com.dyad.backoffice.operacao.OperacaoPedido (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\OperacaoPedido.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\testes\OperacaoPedidoTeste.java
+info woven class br.com.dyad.backoffice.operacao.testes.OperacaoPedidoTeste (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\testes\OperacaoPedidoTeste.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\testes\RegraPedidoTeste.java
+info woven class br.com.dyad.backoffice.operacao.testes.RegraPedidoTeste (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\operacao\testes\RegraPedidoTeste.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\testes\DataListTeste.java
+info woven class br.com.dyad.backoffice.testes.DataListTeste (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\testes\DataListTeste.java)
+info compiling C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\testes\TestesBuscaBinaria.java
+info woven class br.com.dyad.backoffice.testes.Cliente (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\testes\TestesBuscaBinaria.java)
+info woven class br.com.dyad.backoffice.testes.PedidoComparator (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\testes\TestesBuscaBinaria.java)
+info woven class br.com.dyad.backoffice.testes.Subject (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\testes\TestesBuscaBinaria.java)
+info woven class br.com.dyad.backoffice.testes.TestesBuscaBinaria (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\testes\TestesBuscaBinaria.java)
+info woven class br.com.dyad.backoffice.testes.Observador (from C:\eclipse\workspace\BackOffice\src\br\com\dyad\backoffice\testes\TestesBuscaBinaria.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Almoxarifado.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Almoxarifado (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Almoxarifado.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Aplicacao.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Aplicacao (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Aplicacao.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Caixa.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Caixa (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Caixa.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\ContaCorrente.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.ContaCorrente (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\ContaCorrente.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Disponivel.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Disponivel (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Disponivel.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Entidade.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Entidade (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Entidade.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Estabelecimento.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Estabelecimento (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Estabelecimento.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Fisico.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Fisico (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Fisico.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Local.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Local (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Local.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\LocalAtivoImobilizado.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.LocalAtivoImobilizado (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\LocalAtivoImobilizado.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Nucleo.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Nucleo (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Nucleo.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Pessoa.java
+info woven class br.com.dyad.businessinfrastructure.entidades.entidade.Pessoa (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\entidade\Pessoa.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\evento\Evento.java
+info woven class br.com.dyad.businessinfrastructure.entidades.evento.Evento (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\evento\Evento.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\AuxiliarPessoa.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.AuxiliarPessoa (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\AuxiliarPessoa.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\AuxiliarRecurso.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.AuxiliarRecurso (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\AuxiliarRecurso.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Bairro.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.Bairro (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Bairro.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Banco.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.Banco (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Banco.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\CarteiraCobranca.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.CarteiraCobranca (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\CarteiraCobranca.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\EstadoCivil.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.EstadoCivil (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\EstadoCivil.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Localidade.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.Localidade (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Localidade.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Pais.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.Pais (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Pais.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Recurso.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.Recurso (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Recurso.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\RegiaoEstado.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.RegiaoEstado (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\RegiaoEstado.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\RegiaoGeografica.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.RegiaoGeografica (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\RegiaoGeografica.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\RegiaoLocalidade.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.RegiaoLocalidade (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\RegiaoLocalidade.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\RegiaoPais.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.RegiaoPais (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\RegiaoPais.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Tabela.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.Tabela (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Tabela.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\TipoLogradouro.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.TipoLogradouro (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\TipoLogradouro.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Uf.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.Uf (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\Uf.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\UnidadeMedida.java
+info woven class br.com.dyad.businessinfrastructure.entidades.tabela.UnidadeMedida (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\tabela\UnidadeMedida.java)
+info compiling C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\vinculo\Vinculo.java
+info woven class br.com.dyad.businessinfrastructure.entidades.vinculo.Vinculo (from C:\eclipse\workspace\BusinessInfrastructure\src\br\com\dyad\businessinfrastructure\entidades\vinculo\Vinculo.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\AppEntity.java
+info woven class br.com.dyad.commons.data.AppEntity (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\AppEntity.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\AppTempEntity.java
+info woven class br.com.dyad.commons.data.AppTempEntity (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\AppTempEntity.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\AppTransaction.java
+info woven class br.com.dyad.commons.data.AppTransaction (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\AppTransaction.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\ComparatorFieldGetter.java
+info woven class br.com.dyad.commons.data.ComparatorFieldGetter (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\ComparatorFieldGetter.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\DataList.java
+info woven class br.com.dyad.commons.data.DataList$1 (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\DataList.java)
+info woven class br.com.dyad.commons.data.DataList (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\DataList.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\events\DataListEvent.java
+info woven class br.com.dyad.commons.data.events.DataListEvent (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\events\DataListEvent.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\events\DataListListener.java
+info woven class br.com.dyad.commons.data.events.DataListListener (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\events\DataListListener.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\HashMapIndexList.java
+info woven class br.com.dyad.commons.data.HashMapIndexList (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\data\HashMapIndexList.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\file\DesEncrypter.java
+info woven class br.com.dyad.commons.file.DesEncrypter (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\file\DesEncrypter.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\reflect\ReflectUtil.java
+info woven class br.com.dyad.commons.reflect.ReflectUtil (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\reflect\ReflectUtil.java)
+info compiling C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\zip\ZipUtils.java
+info woven class br.com.dyad.commons.zip.ZipUtils (from C:\eclipse\workspace\dyadcommons\trunk\src\br\com\dyad\commons\zip\ZipUtils.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\AppException.java
+info woven class br.com.dyad.client.AppException (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\AppException.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ClientServerException.java
+info woven class br.com.dyad.client.ClientServerException (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ClientServerException.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ClientTestExtJs.java
+info woven class br.com.dyad.client.ClientTestExtJs (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ClientTestExtJs.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ClientUtil.java
+info woven class br.com.dyad.client.ClientUtil (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ClientUtil.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ConfirmPasswordDialog.java
+info woven class br.com.dyad.client.ConfirmPasswordDialog$4 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ConfirmPasswordDialog.java)
+info woven class br.com.dyad.client.ConfirmPasswordDialog$2 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ConfirmPasswordDialog.java)
+info woven class br.com.dyad.client.ConfirmPasswordDialog$1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ConfirmPasswordDialog.java)
+info woven class br.com.dyad.client.ConfirmPasswordDialog (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ConfirmPasswordDialog.java)
+info woven class br.com.dyad.client.ConfirmPasswordDialog$3 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\ConfirmPasswordDialog.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DataClass.java
+info woven class br.com.dyad.client.DataClass (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DataClass.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadAsyncCallback.java
+info woven class br.com.dyad.client.DyadAsyncCallback$2 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadAsyncCallback.java)
+info woven class br.com.dyad.client.DyadAsyncCallback (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadAsyncCallback.java)
+info woven class br.com.dyad.client.DyadAsyncCallback$1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadAsyncCallback.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadBaseModel.java
+info woven class br.com.dyad.client.DyadBaseModel (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadBaseModel.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadBaseTreeModel.java
+info woven class br.com.dyad.client.DyadBaseTreeModel (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadBaseTreeModel.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadClientListener.java
+info woven class br.com.dyad.client.DyadClientListener (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadClientListener.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java
+info woven class br.com.dyad.client.DyadInfrastructure (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info woven class br.com.dyad.client.DyadInfrastructure$6 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info woven class br.com.dyad.client.DyadInfrastructure$1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info woven class br.com.dyad.client.DyadInfrastructure$3 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info woven class br.com.dyad.client.DyadInfrastructure$4 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info woven class br.com.dyad.client.DyadInfrastructure$5 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info woven class br.com.dyad.client.DyadInfrastructure$8 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info woven class br.com.dyad.client.DyadInfrastructure$7 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info woven class br.com.dyad.client.DyadInfrastructure$2 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadInfrastructure.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadSelectionListener.java
+info woven class br.com.dyad.client.DyadSelectionListener (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\DyadSelectionListener.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\FileLoginWindow.java
+info woven class br.com.dyad.client.FileLoginWindow (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\FileLoginWindow.java)
+info woven class br.com.dyad.client.FileLoginWindow$1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\FileLoginWindow.java)
+info woven class br.com.dyad.client.FileLoginWindow$2 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\FileLoginWindow.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\GenericService.java
+info woven class br.com.dyad.client.GenericService (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\GenericService.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\GenericServiceAsync.java
+info woven class br.com.dyad.client.GenericServiceAsync (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\GenericServiceAsync.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DyadGridStoreManager.java
+info woven class br.com.dyad.client.grid.DyadGridStoreManager (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DyadGridStoreManager.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DynamicGrid.java
+info woven class br.com.dyad.client.grid.DynamicGrid$2 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DynamicGrid.java)
+info woven class br.com.dyad.client.grid.DynamicGrid$3 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DynamicGrid.java)
+info woven class br.com.dyad.client.grid.DynamicGrid$1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DynamicGrid.java)
+info woven class br.com.dyad.client.grid.DynamicGrid$3$1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DynamicGrid.java)
+info woven class br.com.dyad.client.grid.DynamicGrid (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DynamicGrid.java)
+info woven class br.com.dyad.client.grid.DynamicGrid$4 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\DynamicGrid.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\FieldType.java
+info woven class br.com.dyad.client.grid.FieldType (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\FieldType.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\GridColumnDef.java
+info woven class br.com.dyad.client.grid.GridColumnDef (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\grid\GridColumnDef.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\CheckBoxCustomized.java
+info woven class br.com.dyad.client.gxt.field.customized.CheckBoxCustomized (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\CheckBoxCustomized.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\CheckBoxGroupCustomized.java
+info woven class br.com.dyad.client.gxt.field.customized.CheckBoxGroupCustomized (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\CheckBoxGroupCustomized.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\ComboBoxCustomized.java
+info woven class br.com.dyad.client.gxt.field.customized.ComboBoxCustomized (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\ComboBoxCustomized.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\DateFieldCustomized.java
+info woven class br.com.dyad.client.gxt.field.customized.DateFieldCustomized (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\DateFieldCustomized.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\HtmlEditorCustomized.java
+info woven class br.com.dyad.client.gxt.field.customized.HtmlEditorCustomized (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\HtmlEditorCustomized.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\IntegerFieldCustomized.java
+info woven class br.com.dyad.client.gxt.field.customized.IntegerFieldCustomized (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\IntegerFieldCustomized.java)
+info compiling C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\LookupFieldCutomized.java
+info woven class br.com.dyad.client.gxt.field.customized.LookupFieldCutomized$2 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\LookupFieldCutomized.java)
+info woven class br.com.dyad.client.gxt.field.customized.LookupFieldCutomized$LookupSelectionListener (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\LookupFieldCutomized.java)
+info woven class br.com.dyad.client.gxt.field.customized.LookupFieldCutomized$1 (from C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\LookupFieldCutomized.java)
+error at (no source information available)
+C:\eclipse\workspace\DyadInfrastructure2\src\br\com\dyad\client\gxt\field\customized\LookupFieldCutomized.java:0::0 Internal compiler error
+java.lang.OutOfMemoryError: Java heap space
+	at java.nio.HeapByteBuffer.<init>(Unknown Source)
+	at java.nio.ByteBuffer.allocate(Unknown Source)
+	at sun.nio.cs.StreamEncoder.<init>(Unknown Source)
+	at sun.nio.cs.StreamEncoder.<init>(Unknown Source)
+	at sun.nio.cs.StreamEncoder.forOutputStreamWriter(Unknown Source)
+	at java.io.OutputStreamWriter.<init>(Unknown Source)
+	at java.io.PrintStream.<init>(Unknown Source)
+	at java.io.PrintStream.<init>(Unknown Source)
+	at org.aspectj.weaver.bcel.LazyClassGen.toLongString(LazyClassGen.java:764)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1837)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1755)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1515)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1322)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.weaveQueuedEntries(AjPipeliningCompilerAdapter.java:435)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.queueForWeaving(AjPipeliningCompilerAdapter.java:371)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.afterProcessing(AjPipeliningCompilerAdapter.java:358)
+	at org.aspectj.ajdt.internal.compiler.CompilerAdapter.ajc$after$org_aspectj_ajdt_internal_compiler_CompilerAdapter$5$6b855184(CompilerAdapter.aj:98)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:652)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:392)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1007)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:268)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:182)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:355)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:234)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.executeInSameVM(AjcTask.java:1228)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.execute(AjcTask.java:1038)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+
+abort ABORT -- (OutOfMemoryError) Java heap space
+Java heap space
+java.lang.OutOfMemoryError: Java heap space
+	at java.nio.HeapByteBuffer.<init>(Unknown Source)
+	at java.nio.ByteBuffer.allocate(Unknown Source)
+	at sun.nio.cs.StreamEncoder.<init>(Unknown Source)
+	at sun.nio.cs.StreamEncoder.<init>(Unknown Source)
+	at sun.nio.cs.StreamEncoder.forOutputStreamWriter(Unknown Source)
+	at java.io.OutputStreamWriter.<init>(Unknown Source)
+	at java.io.PrintStream.<init>(Unknown Source)
+	at java.io.PrintStream.<init>(Unknown Source)
+	at org.aspectj.weaver.bcel.LazyClassGen.toLongString(LazyClassGen.java:764)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1837)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1755)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1515)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1322)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.weaveQueuedEntries(AjPipeliningCompilerAdapter.java:435)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.queueForWeaving(AjPipeliningCompilerAdapter.java:371)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.afterProcessing(AjPipeliningCompilerAdapter.java:358)
+	at org.aspectj.ajdt.internal.compiler.CompilerAdapter.ajc$after$org_aspectj_ajdt_internal_compiler_CompilerAdapter$5$6b855184(CompilerAdapter.aj:98)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:652)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:392)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1007)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:268)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:182)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:355)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:234)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.executeInSameVM(AjcTask.java:1228)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.execute(AjcTask.java:1038)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+
+---- org.aspectj.weaver.bcel.BcelWorld@1d7fbfb ----
+Shadow mungers:
+(around(extraFlags: 1): (((!within(br.com.dyad.infrastructure.aspect.FactoryAspect+) && call(java.util.List<java.lang.String> br.com.dyad.commons.reflect.ReflectUtil+.getClassMethods(java.lang.Class, boolean))) && args(BindingTypePattern(java.lang.Class, 0), BindingTypePattern(boolean, 1))) && persingleton(br.com.dyad.infrastructure.aspect.FactoryAspect))->java.util.List br.com.dyad.infrastructure.aspect.FactoryAspect.ajc$around$br_com_dyad_infrastructure_aspect_FactoryAspect$8$5d0ad8ca(java.lang.Class, boolean, org.aspectj.runtime.internal.AroundClosure))
+(around(extraFlags: 1): (((!within(br.com.dyad.infrastructure.aspect.FactoryAspect+) && call(java.util.List<java.lang.String> br.com.dyad.commons.reflect.ReflectUtil+.getClassTypesProperties(java.lang.Class, boolean))) && args(BindingTypePattern(java.lang.Class, 0), BindingTypePattern(boolean, 1))) && persingleton(br.com.dyad.infrastructure.aspect.FactoryAspect))->java.util.List br.com.dyad.infrastructure.aspect.FactoryAspect.ajc$around$br_com_dyad_infrastructure_aspect_FactoryAspect$7$746425b0(java.lang.Class, boolean, org.aspectj.runtime.internal.AroundClosure))
+(around(extraFlags: 1): (((!within(br.com.dyad.infrastructure.aspect.FactoryAspect+) && call(java.util.List<java.lang.reflect.Field> br.com.dyad.commons.reflect.ReflectUtil+.getClassFields(java.lang.Class, boolean))) && args(BindingTypePattern(java.lang.Class, 0), BindingTypePattern(boolean, 1))) && persingleton(br.com.dyad.infrastructure.aspect.FactoryAspect))->java.util.List br.com.dyad.infrastructure.aspect.FactoryAspect.ajc$around$br_com_dyad_infrastructure_aspect_FactoryAspect$6$4adde95f(java.lang.Class, boolean, org.aspectj.runtime.internal.AroundClosure))
+(afterReturning(extraFlags: 2): (set(* br.com.dyad.infrastructure.widget.grid.DataGrid+.currentEntity) && persingleton(br.com.dyad.infrastructure.aspect.SetOldValueAspect))->void br.com.dyad.infrastructure.aspect.SetOldValueAspect.ajc$afterReturning$br_com_dyad_infrastructure_aspect_SetOldValueAspect$3$d9d61af9(org.aspectj.lang.JoinPoint))
+(around(extraFlags: 1): (((!within(br.com.dyad.infrastructure.aspect.FactoryAspect+) && call(java.util.List<java.lang.annotation.Annotation> br.com.dyad.commons.reflect.ReflectUtil+.getDeclaredField(java.lang.Class, java.lang.String))) && args(BindingTypePattern(java.lang.Class, 0), BindingTypePattern(java.lang.String, 1))) && persingleton(br.com.dyad.infrastructure.aspect.FactoryAspect))->java.lang.reflect.Field br.com.dyad.infrastructure.aspect.FactoryAspect.ajc$around$br_com_dyad_infrastructure_aspect_FactoryAspect$5$62f93bf0(java.lang.Class, java.lang.String, org.aspectj.runtime.internal.AroundClosure))
+(before(extraFlags: 2): ((!within(br.com.dyad.infrastructure.aspect.SendToClientAspect+) && call(* br.com.dyad.infrastructure.widget.BaseServerWidget+.addPropsToClientSincronizer(..))) && persingleton(br.com.dyad.infrastructure.aspect.SendToClientAspect))->void br.com.dyad.infrastructure.aspect.SendToClientAspect.ajc$before$br_com_dyad_infrastructure_aspect_SendToClientAspect$2$da648f91(org.aspectj.lang.JoinPoint))
+(around(extraFlags: 1): (((!within(br.com.dyad.infrastructure.aspect.FactoryAspect+) && call(java.util.List<java.lang.annotation.Annotation> br.com.dyad.commons.reflect.ReflectUtil+.getAnnotations(java.lang.Class))) && args(BindingTypePattern(java.lang.Class, 0))) && persingleton(br.com.dyad.infrastructure.aspect.FactoryAspect))->java.util.List br.com.dyad.infrastructure.aspect.FactoryAspect.ajc$around$br_com_dyad_infrastructure_aspect_FactoryAspect$4$74299ea0(java.lang.Class, org.aspectj.runtime.internal.AroundClosure))
+(afterReturning(extraFlags: 2): (call(* br.com.dyad.commons.data.DataList+.save(..)) && persingleton(br.com.dyad.infrastructure.aspect.SetOldValueAspect))->void br.com.dyad.infrastructure.aspect.SetOldValueAspect.ajc$afterReturning$br_com_dyad_infrastructure_aspect_SetOldValueAspect$2$e1be7a3f(org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): (execution(java.lang.Thread+.new(..)) && persingleton(br.com.dyad.infrastructure.aspect.UserInfoAspect))->void br.com.dyad.infrastructure.aspect.UserInfoAspect.ajc$before$br_com_dyad_infrastructure_aspect_UserInfoAspect$3$7559b69d(org.aspectj.lang.JoinPoint))
+(around(extraFlags: 3): ((((!within(br.com.dyad.infrastructure.aspect.OverrideAspect) && call(public * br.com.dyad.infrastructure.customization.Customizable+.*(..))) && !call(void br.com.dyad.infrastructure.customization.Customizable+.*(..))) && !call(br.com.dyad.infrastructure.customization.Customizable+.new(..))) && persingleton(br.com.dyad.infrastructure.aspect.OverrideAspect))->java.lang.Object br.com.dyad.infrastructure.aspect.OverrideAspect.ajc$around$br_com_dyad_infrastructure_aspect_OverrideAspect$2$71d24430(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(before: ((call(* br.com.dyad.commons.reflect.ReflectUtil.setFieldValue(java.lang.Object, java.lang.String, java.lang.Object)) && args(BindingTypePattern(java.lang.Object, 0), BindingTypePattern(java.lang.String, 1), BindingTypePattern(java.lang.Object, 2))) && persingleton(br.com.dyad.infrastructure.aspect.SetFieldEvents))->void br.com.dyad.infrastructure.aspect.SetFieldEvents.ajc$before$br_com_dyad_infrastructure_aspect_SetFieldEvents$8$8c1dce(java.lang.Object, java.lang.String, java.lang.Object))
+(around(extraFlags: 1): (((!within(br.com.dyad.infrastructure.aspect.FactoryAspect+) && call(java.util.List<java.lang.String> br.com.dyad.commons.reflect.ReflectUtil+.getClassProperties(java.lang.Class, boolean))) && args(BindingTypePattern(java.lang.Class, 0), BindingTypePattern(boolean, 1))) && persingleton(br.com.dyad.infrastructure.aspect.FactoryAspect))->java.util.List br.com.dyad.infrastructure.aspect.FactoryAspect.ajc$around$br_com_dyad_infrastructure_aspect_FactoryAspect$3$a0ef99a5(java.lang.Class, boolean, org.aspectj.runtime.internal.AroundClosure))
+(after: ((call(* br.com.dyad.commons.reflect.ReflectUtil.setFieldValue(java.lang.Object, java.lang.String, java.lang.Object)) && args(BindingTypePattern(java.lang.Object, 0), BindingTypePattern(java.lang.String, 1), BindingTypePattern(java.lang.Object, 2))) && persingleton(br.com.dyad.infrastructure.aspect.SetFieldEvents))->void br.com.dyad.infrastructure.aspect.SetFieldEvents.ajc$after$br_com_dyad_infrastructure_aspect_SetFieldEvents$7$8c1dce(java.lang.Object, java.lang.String, java.lang.Object))
+(afterReturning(extraFlags: 2): ((!within(br.com.dyad.infrastructure.aspect.LogHibernateAspect) && call(* org.hibernate.Session+.delete(..))) && persingleton(br.com.dyad.infrastructure.aspect.LogHibernateAspect))->void br.com.dyad.infrastructure.aspect.LogHibernateAspect.ajc$afterReturning$br_com_dyad_infrastructure_aspect_LogHibernateAspect$2$6b37306d(org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): (((((((!within(br.com.dyad.infrastructure.entity.KeyGenerator+) && !within(br.com.dyad.infrastructure.aspect.HibernateSessionAspect+)) && call(* org.hibernate.Session+.merge(..))) && persingleton(br.com.dyad.infrastructure.aspect.HibernateSessionAspect)) || (((!within(br.com.dyad.infrastructure.entity.KeyGenerator+) && !within(br.com.dyad.infrastructure.aspect.HibernateSessionAspect+)) && call(* org.hibernate.Session+.saveOrUpdate(..))) && persingleton(br.com.dyad.infrastructure.aspect.HibernateSessionAspect))) || (((!within(br.com.dyad.infrastructure.entity.KeyGenerator+) && !within(br.com.dyad.infrastructure.aspect.HibernateSessionAspect+)) && call(* org.hibernate.Session+.update(..))) && persingleton(br.com.dyad.infrastructure.aspect.HibernateSessionAspect))) || (((!within(br.com.dyad.infrastructure.entity.KeyGenerator+) && !within(br.com.dyad.infrastructure.aspect.HibernateSessionAspect+)) && call(* org.hibernate.Session+.save(..))) && persingleton(br.com.dyad.infrastructure.aspect.HibernateSessionAspect))) || (((!within(br.com.dyad.infrastructure.entity.KeyGenerator+) && !within(br.com.dyad.infrastructure.aspect.HibernateSessionAspect+)) && call(* org.hibernate.Session+.persist(..))) && persingleton(br.com.dyad.infrastructure.aspect.HibernateSessionAspect)))->void br.com.dyad.infrastructure.aspect.HibernateSessionAspect.ajc$before$br_com_dyad_infrastructure_aspect_HibernateSessionAspect$2$e1be7a3f(org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): (call(* br.com.dyad.infrastructure.entity.BaseEntity+.set*(..)) && persingleton(br.com.dyad.infrastructure.aspect.SetFieldEvents))->void br.com.dyad.infrastructure.aspect.SetFieldEvents.ajc$before$br_com_dyad_infrastructure_aspect_SetFieldEvents$6$f2ad66e6(org.aspectj.lang.JoinPoint))
+(afterReturning(extraFlags: 2): ((((((!within(br.com.dyad.infrastructure.aspect.LogHibernateAspect) && call(* org.hibernate.Session+.merge(..))) && persingleton(br.com.dyad.infrastructure.aspect.LogHibernateAspect)) || ((!within(br.com.dyad.infrastructure.aspect.LogHibernateAspect) && call(* org.hibernate.Session+.saveOrUpdate(..))) && persingleton(br.com.dyad.infrastructure.aspect.LogHibernateAspect))) || ((!within(br.com.dyad.infrastructure.aspect.LogHibernateAspect) && call(* org.hibernate.Session+.update(..))) && persingleton(br.com.dyad.infrastructure.aspect.LogHibernateAspect))) || ((!within(br.com.dyad.infrastructure.aspect.LogHibernateAspect) && call(* org.hibernate.Session+.save(..))) && persingleton(br.com.dyad.infrastructure.aspect.LogHibernateAspect))) || ((!within(br.com.dyad.infrastructure.aspect.LogHibernateAspect) && call(* org.hibernate.Session+.persist(..))) && persingleton(br.com.dyad.infrastructure.aspect.LogHibernateAspect)))->void br.com.dyad.infrastructure.aspect.LogHibernateAspect.ajc$afterReturning$br_com_dyad_infrastructure_aspect_LogHibernateAspect$1$e1be7a3f(org.aspectj.lang.JoinPoint))
+(after(extraFlags: 4): (((within(br.com.dyad.infrastructure.service.GenericServiceImpl+) && !within(br.com.dyad.infrastructure.aspect.UserInfoAspect+)) && execution(* br.com.dyad.infrastructure.service.GenericServiceImpl+.getServiceValue(..))) && persingleton(br.com.dyad.infrastructure.aspect.UserInfoAspect))->void br.com.dyad.infrastructure.aspect.UserInfoAspect.ajc$after$br_com_dyad_infrastructure_aspect_UserInfoAspect$2$f68bed89(org.aspectj.lang.JoinPoint$StaticPart))
+(afterReturning(extraFlags: 2): (((!within(br.com.dyad.infrastructure.entity.KeyGenerator+) && !within(br.com.dyad.infrastructure.aspect.HibernateSessionAspect+)) && call(* org.hibernate.Transaction+.commit(..))) && persingleton(br.com.dyad.infrastructure.aspect.HibernateSessionAspect))->void br.com.dyad.infrastructure.aspect.HibernateSessionAspect.ajc$afterReturning$br_com_dyad_infrastructure_aspect_HibernateSessionAspect$1$e0295cf6(org.aspectj.lang.JoinPoint))
+(after(extraFlags: 2): (call(* br.com.dyad.infrastructure.widget.field.Field+.setIsCalculated(java.lang.Boolean)) && persingleton(br.com.dyad.infrastructure.aspect.OnCalcFieldAspect))->void br.com.dyad.infrastructure.aspect.OnCalcFieldAspect.ajc$after$br_com_dyad_infrastructure_aspect_OnCalcFieldAspect$3$3212b27(org.aspectj.lang.JoinPoint))
+(around(extraFlags: 3): ((!within(br.com.dyad.infrastructure.aspect.FactoryAspect+) && call(java.lang.Object java.lang.Class.newInstance())) && persingleton(br.com.dyad.infrastructure.aspect.FactoryAspect))->java.lang.Object br.com.dyad.infrastructure.aspect.FactoryAspect.ajc$around$br_com_dyad_infrastructure_aspect_FactoryAspect$2$7c271d6c(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(after(extraFlags: 2): (call(* br.com.dyad.infrastructure.entity.BaseEntity+.set*(..)) && persingleton(br.com.dyad.infrastructure.aspect.SetFieldEvents))->void br.com.dyad.infrastructure.aspect.SetFieldEvents.ajc$after$br_com_dyad_infrastructure_aspect_SetFieldEvents$5$f2ad66e6(org.aspectj.lang.JoinPoint))
+(after(extraFlags: 2): (call(* br.com.dyad.infrastructure.widget.field.Field+.setValueWithoutEditing(..)) && persingleton(br.com.dyad.infrastructure.aspect.SetFieldEvents))->void br.com.dyad.infrastructure.aspect.SetFieldEvents.ajc$after$br_com_dyad_infrastructure_aspect_SetFieldEvents$4$fce55f1e(org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): (call(* br.com.dyad.infrastructure.widget.field.Field+.setIsCalculated(java.lang.Boolean)) && persingleton(br.com.dyad.infrastructure.aspect.OnCalcFieldAspect))->void br.com.dyad.infrastructure.aspect.OnCalcFieldAspect.ajc$before$br_com_dyad_infrastructure_aspect_OnCalcFieldAspect$2$3212b27(org.aspectj.lang.JoinPoint))
+(after(extraFlags: 2): (call(* br.com.dyad.infrastructure.widget.field.Field+.setValue(..)) && persingleton(br.com.dyad.infrastructure.aspect.SetFieldEvents))->void br.com.dyad.infrastructure.aspect.SetFieldEvents.ajc$after$br_com_dyad_infrastructure_aspect_SetFieldEvents$3$8286d36(org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): (((within(br.com.dyad.infrastructure.service.GenericServiceImpl+) && !within(br.com.dyad.infrastructure.aspect.UserInfoAspect+)) && execution(* br.com.dyad.infrastructure.service.GenericServiceImpl+.getServiceValue(..))) && persingleton(br.com.dyad.infrastructure.aspect.UserInfoAspect))->void br.com.dyad.infrastructure.aspect.UserInfoAspect.ajc$before$br_com_dyad_infrastructure_aspect_UserInfoAspect$1$f68bed89(org.aspectj.lang.JoinPoint))
+(after(extraFlags: 2): (((execution(* br.com.dyad.infrastructure.schedule.DyadJob+.*(..)) && persingleton(br.com.dyad.infrastructure.aspect.SysReferenceAspect)) || (execution(* br.com.dyad.infrastructure.widget.BaseAction+.*(..)) && persingleton(br.com.dyad.infrastructure.aspect.SysReferenceAspect))) || (execution(* br.com.dyad.infrastructure.widget.Window+.*(..)) && persingleton(br.com.dyad.infrastructure.aspect.SysReferenceAspect)))->void br.com.dyad.infrastructure.aspect.SysReferenceAspect.ajc$after$br_com_dyad_infrastructure_aspect_SysReferenceAspect$2$5abbb8d7(org.aspectj.lang.JoinPoint))
+(around(extraFlags: 3): (((!within(br.com.dyad.infrastructure.aspect.OverrideAspect) && call(public void br.com.dyad.infrastructure.customization.Customizable+.*(..))) && !call(br.com.dyad.infrastructure.customization.Customizable+.new(..))) && persingleton(br.com.dyad.infrastructure.aspect.OverrideAspect))->void br.com.dyad.infrastructure.aspect.OverrideAspect.ajc$around$br_com_dyad_infrastructure_aspect_OverrideAspect$1$79c14354(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(after(extraFlags: 2): (set(* br.com.dyad.infrastructure.widget.BaseServerWidget+.*) && persingleton(br.com.dyad.infrastructure.aspect.DisableActionAspect))->void br.com.dyad.infrastructure.aspect.DisableActionAspect.ajc$after$br_com_dyad_infrastructure_aspect_DisableActionAspect$1$5abbb8d7(org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): ((!within(br.com.dyad.infrastructure.aspect.SendToClientAspect+) && set(* br.com.dyad.infrastructure.widget.BaseServerWidget+.*)) && persingleton(br.com.dyad.infrastructure.aspect.SendToClientAspect))->void br.com.dyad.infrastructure.aspect.SendToClientAspect.ajc$before$br_com_dyad_infrastructure_aspect_SendToClientAspect$1$80c1d82a(org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): (call(* br.com.dyad.infrastructure.widget.field.Field+.setValueWithoutEditing(..)) && persingleton(br.com.dyad.infrastructure.aspect.SetFieldEvents))->void br.com.dyad.infrastructure.aspect.SetFieldEvents.ajc$before$br_com_dyad_infrastructure_aspect_SetFieldEvents$2$fce55f1e(org.aspectj.lang.JoinPoint))
+(before: ((((!within(br.com.dyad.infrastructure.aspect.LogExceptionAspect+) && handler(java.lang.Exception+)) && args(BindingTypePattern(java.lang.Exception, 0))) && persingleton(br.com.dyad.infrastructure.aspect.LogExceptionAspect)) && !concretecflow(org.aspectj.runtime.internal.CFlowCounter br.com.dyad.infrastructure.aspect.LogExceptionAspect.ajc$cflowCounter$0))->void br.com.dyad.infrastructure.aspect.LogExceptionAspect.ajc$before$br_com_dyad_infrastructure_aspect_LogExceptionAspect$1$d64e01f5(java.lang.Exception))
+(before(extraFlags: 2): (((execution(* br.com.dyad.infrastructure.schedule.DyadJob+.*(..)) && persingleton(br.com.dyad.infrastructure.aspect.SysReferenceAspect)) || (execution(* br.com.dyad.infrastructure.widget.BaseAction+.*(..)) && persingleton(br.com.dyad.infrastructure.aspect.SysReferenceAspect))) || (execution(* br.com.dyad.infrastructure.widget.Window+.*(..)) && persingleton(br.com.dyad.infrastructure.aspect.SysReferenceAspect)))->void br.com.dyad.infrastructure.aspect.SysReferenceAspect.ajc$before$br_com_dyad_infrastructure_aspect_SysReferenceAspect$1$5abbb8d7(org.aspectj.lang.JoinPoint))
+(cflowEntry: adviceexecution(* *)->org.aspectj.runtime.internal.CFlowCounter br.com.dyad.infrastructure.aspect.LogExceptionAspect.ajc$cflowCounter$0)
+(before(extraFlags: 2): (set(* br.com.dyad.infrastructure.entity.AbstractEntity+.*) && persingleton(br.com.dyad.infrastructure.aspect.SetOldValueAspect))->void br.com.dyad.infrastructure.aspect.SetOldValueAspect.ajc$before$br_com_dyad_infrastructure_aspect_SetOldValueAspect$1$f2ad66e6(org.aspectj.lang.JoinPoint))
+(around(extraFlags: 7): ((!within(br.com.dyad.infrastructure.aspect.FactoryAspect+) && call(br.com.dyad.infrastructure.customization.Customizable+.new(..))) && persingleton(br.com.dyad.infrastructure.aspect.FactoryAspect))->java.lang.Object br.com.dyad.infrastructure.aspect.FactoryAspect.ajc$around$br_com_dyad_infrastructure_aspect_FactoryAspect$1$aa78db0e(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint$StaticPart, org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): (call(* br.com.dyad.infrastructure.widget.field.Field+.setValue(..)) && persingleton(br.com.dyad.infrastructure.aspect.SetFieldEvents))->void br.com.dyad.infrastructure.aspect.SetFieldEvents.ajc$before$br_com_dyad_infrastructure_aspect_SetFieldEvents$1$8286d36(org.aspectj.lang.JoinPoint))
+(around(extraFlags: 3): ((!within(br.com.dyad.infrastructure.aspect.ControlDefineInteractionAspect) && call(public void br.com.dyad.infrastructure.widget.Interaction+.defineInteraction())) && persingleton(br.com.dyad.infrastructure.aspect.ControlDefineInteractionAspect))->void br.com.dyad.infrastructure.aspect.ControlDefineInteractionAspect.ajc$around$br_com_dyad_infrastructure_aspect_ControlDefineInteractionAspect$1$e1782580(org.aspectj.runtime.internal.AroundClosure, org.aspectj.lang.JoinPoint))
+(before(extraFlags: 2): (call(* br.com.dyad.infrastructure.widget.BaseServerWidget+.on*(..)) && persingleton(br.com.dyad.infrastructure.aspect.ExecuteWidgetListenerAspect))->void br.com.dyad.infrastructure.aspect.ExecuteWidgetListenerAspect.ajc$before$br_com_dyad_infrastructure_aspect_ExecuteWidgetListenerAspect$1$56ece097(org.aspectj.lang.JoinPoint))
+(after(extraFlags: 2): (call(* br.com.dyad.infrastructure.widget.field.Field+.setValue*(..)) && persingleton(br.com.dyad.infrastructure.aspect.OnCalcFieldAspect))->void br.com.dyad.infrastructure.aspect.OnCalcFieldAspect.ajc$after$br_com_dyad_infrastructure_aspect_OnCalcFieldAspect$1$ed6c0c95(org.aspectj.lang.JoinPoint))
+Type mungers:
+(BcelTypeMunger ResolvedTypeMunger(PrivilegedAccess, void br.com.dyad.infrastructure.widget.Window.enableAndShowActions(java.lang.String)))
+(BcelTypeMunger ResolvedTypeMunger(PrivilegedAccess, void br.com.dyad.infrastructure.widget.Window.enableAndShowActions(br.com.dyad.infrastructure.widget.BaseAction)))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Class))
+(BcelTypeMunger ExposeTypeMunger(boolean))
+(BcelTypeMunger ExposeTypeMunger(java.lang.String))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Exception))
+(BcelTypeMunger: CflowField br.com.dyad.infrastructure.aspect.LogExceptionAspect ajc$cflowCounter$0)
+(BcelTypeMunger ResolvedTypeMunger(PrivilegedAccess, boolean br.com.dyad.infrastructure.widget.BaseServerWidget.addPropToClient(java.lang.String, java.lang.Object)))
+(BcelTypeMunger ExposeTypeMunger(java.lang.Object))
+(BcelTypeMunger ExposeTypeMunger(java.lang.String))
+Late Type mungers:
+Empty

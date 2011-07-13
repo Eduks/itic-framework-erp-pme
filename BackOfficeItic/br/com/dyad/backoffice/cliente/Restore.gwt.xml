@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 1.6.4//EN" "http://google-web-toolkit.googlecode.com/svn/tags/1.6.4/distro-source/core/src/gwt-module.dtd">
+<module rename-to='restore'>
+      <!-- Inherit the core Web Toolkit stuff.                        -->
+      <inherits name="br.com.dyad.Restore"/> 
+      <inherits name="com.google.gwt.user.User" />	
+      <inherits name="com.extjs.gxt.desktop.WebDesktop" />
+      <inherits name='com.extjs.gxt.themes.Themes' />
+	  <inherits name="com.extjs.gxt.ui.GXT" />	
+
+      <!-- Specify the app entry point class.                         -->
+      <!-- <entry-point class="br.com.dyad.client.Restore" /> -->
+      
+      <servlet class="br.com.dyad.infrastructure.service.RestoreServiceImpl" path="/restoreservice"/>    
+</module>
